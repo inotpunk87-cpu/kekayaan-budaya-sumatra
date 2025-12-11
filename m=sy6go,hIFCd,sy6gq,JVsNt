@@ -1,0 +1,13 @@
+loaded_h_0(function(_){var window=this;
+_.Eqt=_.x("hIFCd",[]);
+_.t("hIFCd");
+var Fqt=class extends _.hs{static Sa(){return{controller:{}}}constructor(a){super(a.Oa)}Ba(a){a.qb.getData("ved").Mb()&&_.fw(a.qb.el());this.trigger("b7uTSb")}oa(a){a.qb.getData("ved").Mb()&&_.fw(a.qb.el());_.Qc(window,_.oc("https://support.google.com/legal/answer/3110420"))}Aa(a){a.qb.getData("ved").Mb()&&_.fw(a.qb.el());this.trigger("kwkfxf")}};Fqt.prototype.$wa$YCkTJf=function(){return this.Aa};Fqt.prototype.$wa$qujI4e=function(){return this.oa};Fqt.prototype.$wa$rK2Kmb=function(){return this.Ba};
+_.ks(_.Eqt,Fqt);
+_.v();
+_.Nqt=_.x("JVsNt",[_.Hpt]);
+_.t("JVsNt");
+var Oqt=class extends _.hs{static Sa(){return{model:{gYa:_.Jpt}}}constructor(a){super(a.Oa);this.model=a.model.gYa}Ba(a){a.qb.getData("ved").Mb()&&_.fw(a.qb.el());_.Qc(window,_.oc("https://support.google.com/websearch/answer/9673730"))}oa(a){a.qb.getData("ved").Mb()&&_.fw(a.qb.el());_.Qc(window,_.oc("https://support.google.com/websearch/troubleshooter/3111061"))}Aa(a){this.model.isSignedIn()?this.trigger("b7uTSb"):this.oa(a)}};Oqt.prototype.$wa$rK2Kmb=function(){return this.Aa};
+Oqt.prototype.$wa$xUzcYb=function(){return this.oa};Oqt.prototype.$wa$op0Hbf=function(){return this.Ba};_.ks(_.Nqt,Oqt);
+_.v();
+});
+// Google Inc.
