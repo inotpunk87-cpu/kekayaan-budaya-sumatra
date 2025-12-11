@@ -1,0 +1,441 @@
+/* ============================================================
+   THEME: SUMATRA HERITAGE
+   Palette:
+   --color-primary: Merah Ulu (Khas Sumatra)
+   --color-secondary: Emas Songket (Minang & Melayu)
+   --color-dark: Hitam Andalas
+   --color-accent: Hijau Rafflesia
+   --color-light: Putih Gading Kain Tradisional
+   ============================================================ */
+
+/* Global Reset & Base */
+:root {
+    --color-primary: #B30000;     /* Merah Ulu */
+    --color-secondary: #D4A017;   /* Emas Songket */
+    --color-dark: #1B1B1B;        /* Hitam Andalas */
+    --color-accent: #0C5F36;      /* Hijau Rafflesia */
+    --color-light: #FAF7F0;       /* Putih gading */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    padding: 60px 0;
+    border-bottom: 1px solid #eee;
+}
+
+h2 {
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2.2em;
+}
+
+.subtitle {
+    text-align: center;
+    color: #555;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+/* ============================================================
+   HEADER & FOOTER (Songket Gradient)
+   ============================================================ */
+
+header {
+    background: linear-gradient(90deg, var(--color-dark), var(--color-primary));
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 6px solid var(--color-secondary);
+}
+
+header h1 {
+    font-size: 3em;
+    letter-spacing: 2px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: var(--color-dark);
+    color: #ccc;
+    font-size: 0.9em;
+}
+
+/* ============================================================
+   NAVIGATION
+   ============================================================ */
+
+nav {
+    background: var(--color-primary);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.nav-list li a:hover {
+    background-color: var(--color-accent);
+    color: var(--color-secondary);
+}
+
+.nav-list li a i {
+    margin-right: 8px;
+}
+
+/* ============================================================
+   PETA SUMATRA
+   ============================================================ */
+
+#peta-sumatra {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.sumatra-map {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+
+.sumatra-map path {
+    transition: all 0.3s;
+    cursor: pointer;
+    stroke: #fff;
+    stroke-width: 0.5;
+}
+
+.sumatra-map path:hover,
+.sumatra-map path.active {
+    opacity: 0.85;
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 8px var(--color-accent));
+}
+
+.detail-card {
+    background-color: var(--color-light);
+    border: 2px solid var(--color-primary);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.detail-card h3 {
+    color: var(--color-dark);
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.detail-card .detail-link {
+    display: block;
+    padding: 8px 0;
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px dashed #ddd;
+    transition: color 0.3s;
+}
+
+.detail-card .detail-link:hover {
+    color: var(--color-secondary);
+}
+
+/* ============================================================
+   GALERI FOTO
+   ============================================================ */
+
+.slider-wrapper {
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.galeri-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 20px;
+}
+
+.galeri-item {
+    min-width: 300px;
+    flex: 0 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    scroll-snap-align: start;
+}
+
+.galeri-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.galeri-item .caption {
+    background-color: var(--color-dark);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Video Grid */
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.video-link-card {
+    display: block;
+    text-decoration: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.video-link-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.video-thumbnail {
+    width: 100%;
+    height: auto;
+}
+
+.video-info {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ============================================================
+   ARTIKEL (Modern Card)
+   ============================================================ */
+
+.article-grid-modern {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.article-card-modern {
+    position: relative;
+    height: 380px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
+    cursor: pointer;
+}
+
+.article-card-modern:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 15px 40px rgba(212, 160, 23, 0.55);
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(26, 26, 26, 0.9), rgba(26, 26, 26, 0.4), rgba(26, 26, 26, 0.1));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 25px;
+    transition: background 0.4s ease-out;
+}
+
+.article-card-modern:hover .card-overlay {
+    background: linear-gradient(to top, rgba(179, 0, 0, 0.95), rgba(179, 0, 0, 0.7), rgba(212, 160, 23, 0.35));
+}
+
+.card-header-modern {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: var(--color-secondary);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.card-header-modern i {
+    margin-right: 10px;
+    color: var(--color-secondary);
+}
+
+.card-body-modern h4 {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.card-body-modern p {
+    font-size: 0.95em;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.read-more-modern {
+    display: inline-block;
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: 2px solid var(--color-secondary);
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.read-more-modern:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    transform: scale(1.05);
+}
+
+/* ============================================================
+   KUIS
+   ============================================================ */
+
+#quiz {
+    padding: 40px 0;
+    background-color: var(--color-light);
+    border-radius: 10px;
+}
+
+.start-btn {
+    background-color: var(--color-primary);
+    color: white;
+    border: 3px solid var(--color-secondary);
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    transition: all 0.3s;
+}
+
+.start-btn:hover {
+    background-color: var(--color-accent);
+}
+
+.question-title {
+    color: var(--color-dark);
+    font-size: 1.4em;
+    margin-bottom: 25px;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.option-btn {
+    background-color: white;
+    color: #343a40;
+    border: 2px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.option-btn:hover:enabled {
+    background-color: #fff4cc;
+    border-color: var(--color-secondary);
+}
+
+.option-btn.correct {
+    background-color: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+    font-weight: bold;
+}
+
+.option-btn.incorrect {
+    background-color: #f8d7da;
+    border-color: var(--color-primary);
+    color: #721c24;
+    font-weight: bold;
+}
+
+.next-btn {
+    background-color: var(--color-dark);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+}
+
+#explanation {
+    background-color: #fff7d9;
+    border-left: 5px solid var(--color-secondary);
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.final-result {
+    text-align: center;
+    padding: 30px;
+    border: 3px solid var(--color-primary);
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.score-text {
+    font-size: 1.6em;
+    color: var(--color-primary);
+}

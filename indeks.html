@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelajah Budaya Nusantara: Sumatra - Edisi Eksklusif</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+</head>
+<body>
+    <header>
+        <h1>KEKAYAAN BUDAYA SUMATRA</h1>
+        <p>Eksplorasi Mendalam Adat, Seni, Kuliner, dan Sejarah Pulau Emas</p>
+    </header>
+
+    <nav>
+        <ul class="nav-list">
+            <li><a href="#peta"><i class="fas fa-map-marked-alt"></i> Peta Budaya</a></li>
+            <li><a href="#galeri"><i class="fas fa-camera"></i> Galeri & Video</a></li>
+            <li><a href="#artikel"><i class="fas fa-newspaper"></i> Artikel Inti</a></li>
+            <li><a href="#quiz"><i class="fas fa-question-circle"></i> Uji Wawasan</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        
+        <section id="peta">
+    <h2>🗺️ Peta Budaya Interaktif & Filosofi Daerah</h2>
+    <p class="subtitle">Klik wilayah (Aceh, Sumut, Sumbar) untuk mempelajari warisan budaya dan melihat tautan videonya.</p>
+    
+    <div id='peta-sumatra'>
+        <svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg" class="sumatra-map">
+            <path id="aceh-path" d="M30 0 L70 0 C75 10, 75 20, 65 25 L50 35 L40 25 L30 10 Z" fill="#800000" data-region="Aceh" />
+            <text x="45" y="15" fill="white" font-size="6" text-anchor="middle" pointer-events="none">ACEH</text>
+            
+            <path id="sumut-path" d="M50 35 L65 25 L75 40 L80 60 L60 70 L40 50 Z" fill="#FFC107" data-region="Sumut" />
+            <text x="60" y="55" fill="#333" font-size="6" text-anchor="middle" pointer-events="none">SUMUT</text>
+            
+            <path id="sumbar-path" d="M40 50 L60 70 L50 90 L30 90 L20 75 L25 60 Z" fill="#D40000" data-region="Sumbar" />
+            <text x="40" y="80" fill="white" font-size="6" text-anchor="middle" pointer-events="none">SUMBAR</text>
+
+            <rect x="5" y="105" width="20" height="4" fill="#800000" />
+            <text x="28" y="108" font-size="4" fill="#333">Aceh</text>
+            <rect x="5" y="112" width="20" height="4" fill="#FFC107" />
+            <text x="28" y="115" font-size="4" fill="#333">Sumatera Utara</text>
+            <rect x="50" y="105" width="20" height="4" fill="#D40000" />
+            <text x="73" y="108" font-size="4" fill="#333">Sumatera Barat</text>
+        </svg>
+    </div>
+    
+    <div id="detail-budaya" class="detail-card">
+        <h3><i class="fas fa-info-circle"></i> Informasi Budaya Regional</h3>
+        <p>Klik pada area peta (Aceh, Sumut, Sumbar) di atas untuk melihat detail budaya dan video pendukung.</p>
+        <div id="media-links" style="margin-top: 15px;"></div>
+    </div>
+</section>
+        <section id="galeri">
+            <h2> Galeri Visual Pilihan & Video Edukasi</h2>
+            <p class="subtitle">Saksikan keindahan Tari Saman, Rumah Gadang, dan Danau Toba dalam galeri berikut.</p>
+            
+            <div class="slider-wrapper">
+                <div class="galeri-slider">
+                    <div class="galeri-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeYL3_D-G0dPPJX80I6-PU_gdVp8w4355fPw&s" alt="Tari Saman"><p class="caption">Tari Saman (Aceh)</p></div>
+                    <div class="galeri-item"><img src="https://image-apac.archify.com/blog/l/sacv9v49.jpg" alt="Rumah Gadang"><p class="caption">Arsitektur Rumah Gadang (Sumbar)</p></div>
+                    <div class="galeri-item"><img src="https://tribratanews.polri.go.id/web/image/blog.post/51253/image" alt="Danau Toba"><p class="caption">Pesona Danau Toba (Sumut)</p></div>
+                </div>
+            </div>
+
+            <div class="video-list">
+                <h3><i class="fab fa-youtube"></i> Video Pembelajaran Tambahan</h3>
+                <div class="video-grid">
+                    
+                    <a href="https://youtu.be/DMcFqtm1lfY?si=kJMWA3WgBqLSLnnA" target="_blank" class="video-link-card">
+                        <img src="https://img.youtube.com/vi/DMcFqtm1lfY/mqdefault.jpg" alt="Thumbnail Rendang" class="video-thumbnail">
+                        <div class="video-info">
+                            <i class="fas fa-video"></i> Masakan khas SUMATRA
+                        </div>
+                    </a>
+                    
+                    <a href="https://youtu.be/Kv1VWXPPaLk?si=7lbewehdVKR101dB" target="_blank" class="video-link-card">
+                        <img src="https://img.youtube.com/vi/Kv1VWXPPaLk/mqdefault.jpg" alt="Thumbnail Baju Adat Batak" class="video-thumbnail">
+                        <div class="video-info">
+                            <i class="fas fa-video"></i> Fashion show baju adat BATAK
+                        </div>
+                    </a>
+                    
+                    <a href="https://youtu.be/HrISe1oDR5I?si=g60AGH1T1YuckePL" target="_blank" class="video-link-card">
+                        <img src="https://img.youtube.com/vi/HrISe1oDR5I/mqdefault.jpg" alt="Thumbnail Masjid Baiturrahman" class="video-thumbnail">
+                        <div class="video-info">
+                            <i class="fas fa-video"></i> Sejarah Masjid Baiturrahman
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="artikel">
+            <h2> Artikel Mendalam: Filosofi Budaya</h2>
+            <p class="subtitle">Selami intisari budaya Sumatera melalui koleksi artikel pilihan kami, dengan visual yang memukau.</p>
+
+            <div class="article-grid-modern">
+                
+                <div class="article-card-modern" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ef/Perti_-_Sulaiman_ar-Rasuli.jpg');">
+                    <div class="card-overlay">
+                        <div class="card-header-modern">
+                            <i class="fas fa-scroll"></i> Adat Basandi Syarak
+                        </div>
+                        <div class="card-body-modern">
+                            <h4>Fondasi Kekuatan Minangkabau</h4>
+                            <p>Integrasi ajaran Islam dengan sistem kekerabatan matrilineal yang unik. Rumah Gadang menjadi simbol sentral kekerabatan kaum yang diwarisi melalui ibu.</p>
+                            <a href="https://id.wikipedia.org/wiki/Adaik_basandi_syarak" target="_blank" class="read-more-modern">Baca Lebih Lanjut <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-card-modern" style="background-image: url('https://assets.promediateknologi.id/crop/131x9:889x1023/750x500/webp/photo/2023/08/11/id-11134207-7qukx-lj3vi4jm1rai8e-333689004.jpeg');">
+                    <div class="card-overlay">
+                        <div class="card-header-modern">
+                            <i class="fas fa-hands-holding"></i> Ulos Batak
+                        </div>
+                        <div class="card-body-modern">
+                            <h4>Simbol Kasih Sayang & Kehormatan</h4>
+                            <p>Kain tenun sakral yang melambangkan penghormatan dan kehangatan spiritual. Warna Merah, Putih, Hitam mencerminkan keteguhan dan kesucian dalam hidup.</p>
+                            <a href="https://pesonakonveksi.id/ulos-kain-sakral-masyarakat-batak-warisan-yang-menghangatkan-jiwa/" target="_blank" class="read-more-modern">Baca Lebih Lanjut <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-card-modern" style="background-image: url('data:image/jpeg;base64,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');">
+                    <div class="card-overlay">
+                        <div class="card-header-modern">
+                            <i class="fas fa-drum"></i> Tari Saman
+                        </div>
+                        <div class="card-body-modern">
+                            <h4>Filosofi Persatuan & Dakwah</h4>
+                            <p>Tarian Tanpa Musik Eksternal ini menonjolkan kekompakan penari. Melambangkan persatuan (seukat) dan sarana dakwah dengan pesan moral serta kritik sosial.</p>
+                            <a href="https://indonesiakaya.com/pustaka-indonesia/tari-saman-seni-dakwah-dan-perlawanan-dari-tanah-aceh/" target="_blank" class="read-more-modern">Baca Lebih Lanjut <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="quiz">
+            <h2> Uji Wawasan Budaya Anda</h2>
+            <button id="start-quiz" class="start-btn">Mulai Kuis!</button>
+
+            <div id="quiz-container" style="display: none;">
+                <h3 id="question" class="question-title"></h3>
+                <div id="options" class="options-grid"></div>
+                <button id="next-btn" class="next-btn" style="display: none;"><i class="fas fa-arrow-right"></i> Lanjut Pertanyaan</button>
+            </div>
+            <div id="result" class="result-box"></div>
+        </section>
+        
+    </main>
+    <footer><p>© 2025 Jelajah Budaya Nusantara. Dibuat dengan semangat literasi budaya.</p></footer>
+    <script src="script.js"></script> 
+</body>
+</html>
